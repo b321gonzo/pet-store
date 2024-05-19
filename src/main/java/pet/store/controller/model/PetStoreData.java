@@ -36,11 +36,11 @@ public class PetStoreData {
 	    this.petStorePhone = petStore.getPetStorePhone();
 
 	    for (Employee employee : petStore.getEmployees()) {
-	      employees.add(new PetStoreEmployee());
+	      employees.add(new PetStoreEmployee(employee));
 	    }
 
 	    for (Customer customer : petStore.getCustomers()) {
-	      customers.add(new PetStoreCustomer());
+	      customers.add(new PetStoreCustomer(customer));
 	    }
 	}
 }
